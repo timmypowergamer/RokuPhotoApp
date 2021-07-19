@@ -1,0 +1,30 @@
+{
+  "flickrAPIKey": "yourAPIKey",
+  "groups": [
+    {
+      "id": "1036414@N22",
+      "thumbnailURL": "https://live.staticflickr.com/65535/51182164530_7c31871de9_n.jpg",
+      "title": "Kittens, Kittens, and more Kittens!"
+    },
+    {
+      "id": "puppylove",
+      "thumbnailURL": "https://live.staticflickr.com/65535/51287118481_81a47a4a3f_n.jpg",
+      "title": "Puppy Love"
+    },
+    {
+      "id": "518319@N22",
+      "thumbnailURL": "https://live.staticflickr.com/65535/51243092019_1d32271292_n.jpg",
+      "title": "Baibee Baby Pandas at San Diego, Atlanta, Memphis & National Zoo"
+    },
+    {
+      "id": "44307958@N00",
+      "thumbnailURL": "https://live.staticflickr.com/65535/51306314480_e4d362e6e8_n.jpg",
+      "title": "Llamas!"
+    },
+    {
+      "id": "518319@N22",
+      "thumbnailURL": "https://live.staticflickr.com/65535/51243092019_1d32271292_n.jpg",
+      "title": "Monkeys, apes and lemures"
+    }
+  ]
+}

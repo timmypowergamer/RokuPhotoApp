@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+
+<component name="PhotoGridScreen" extends="Group" initialFocus="RowList">
+
+<interface>
+    <field id="content" type="node" onchange="rowListContentChanged" alias="RowList.content"/>
+</interface> 
+
+<script type="text/brightscript" uri="pkg:/components/PhotoGridScreen/PhotoGridScreen.brs"/>
+
+<children>
+    <Label id="titleLabel"
+        width = "1020"
+        translation="[130,100]"
+    />
+
+    <Poster id="mainPhoto"
+        width = "1024"
+        height = "550"
+        translation = "[128,150]"
+        loadDisplayMode="scaleToFit"
+    />
+    <Rectangle id="rowRect"
+        color="0x000000BB"
+        width = "1280"
+        height="200"
+        translation="[0,500]"
+    >
+        <RowList id="rowList"
+            itemComponentName="RowListItemComponent"
+            translation="[0,10]"
+            numRows = "1"
+            rowitemSize="[[180,180]]"
+            rowItemSpacing="[[20,0]]"
+            itemSize="[1280,180]"
+            rowLabelOffset="[[50,20]]"
+            focusXOffset="[50]"
+            showRowLabel="[false]"
+            rowFocusAnimationStyle="fixedFocusWrap"
+            backgroundColor="0x111111"
+        />
+    </Rectangle>
+</children>
+
+</component>

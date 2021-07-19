@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+
+<component name="PhotoAppMainScene" extends="Scene" >
+
+	<interface>
+		<field id="rowListContent" type="node" onchange="rowListContentChanged" />
+	</interface> 
+	
+	<script type="text/brightscript" uri="pkg:/components/PhotoAppMainScene/PhotoAppMainScene.brs"/>
+    <script type="text/brightscript" uri="pkg:/components/UILogic/ScreenStackLogic.brs"/>
+    <script type="text/brightscript" uri="pkg:/components/UILogic/NavigationLogic.brs"/>
+    <script type="text/brightscript" uri="pkg:/components/UILogic/ContentTaskLogic.brs"/>
+
+    <children>
+        <!--Overhang to display title and clock-->
+        <Overhang id="overhang"
+            showoptions = "false"
+            showClock = "true"
+            translation="[0,20]"
+            title="Flickr Group Photo Browser"
+        />
+        <!--Loading indicator-->
+        <Label id="loadingIndicator"
+            text ="Loading..."
+            width = "1280"
+            height = "720"
+            translation = "[0,0]"
+            horizAlign="center"
+            vertAlign="center"
+            visible = "false"
+            font="font:MediumBoldSystemFont"
+        />
+    </children>
+
+</component>

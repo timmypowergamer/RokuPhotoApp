@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+
+<component name="PhotoViewScreen" extends="Group">
+
+<interface>
+    <field id="contentToDisplay" type="node" onchange="photoContentChanged"/>
+</interface> 
+
+<script type="text/brightscript" uri="pkg:/components/PhotoViewScreen/PhotoViewScreen.brs"/>
+
+<children>
+    <Poster id="mainPhoto"/>
+    <Label id="title"/>
+</children>
+
+</component>

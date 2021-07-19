@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="PhotoAppGroupGrid" extends="Group">
+    <script type="text/brightscript" uri="PhotoAppGroupGrid.brs" />
+    
+    <interface>
+        <field id="groupID" type="string" alwaysNotify="true"/>
+    </interface>
+
+    <children>
+        <PosterGrid id="groupGrid"
+            translation="[140,150]"
+            basePosterSize="[320,180]"
+            itemSpacing="[20,20]"
+            posterDisplayMode="scaleToZoom"
+            numColumns="3"
+            numRows="1"
+        />
+        <Label id="titleLabel"
+            width = "1020"
+            translation="[130,100]"
+        />
+    </children>
+</component>
