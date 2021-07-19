@@ -5,17 +5,19 @@ end sub
 sub GetContent()
     print "attempting to load group '"+ m.top.groupID +"' photo pool from Flickr"
 
-    'call the flickr REST api to get the list of photos in the group. (default is 100 at a time)
+    'call the flickr REST api to get the list of photos in the group.
     readFromFlickr = CreateObject("roUrlTransfer")
     readFromFlickr.SetCertificatesFile("common:/certs/ca-bundle.crt")
     readFromFlickr.AddHeader("X-Roku-Reserved-Dev-Id", "")
     readFromFlickr.InitClientCertificates()
+    'build the url
     url = "https://www.flickr.com/services/rest/?method=flickr.groups.pools.getPhotos&api_key=" + m.top.flickrAPIKey
     if Instr(0, m.top.groupID, "@") <> 0
         url = url + "&group_id=" + m.top.groupID
     else
         url = url + "&group_path_alias=" + m.top.groupID
     end if
+    url = url + "&per_page=100"
     readFromFlickr.setUrl(url)
 
     'create an XML element to parse the data from the repsonse

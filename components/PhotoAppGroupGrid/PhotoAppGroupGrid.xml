@@ -13,11 +13,16 @@
             itemSpacing="[20,20]"
             posterDisplayMode="scaleToZoom"
             numColumns="3"
-            numRows="1"
+            numRows="3"
+            useAtlas="false"
         />
         <Label id="titleLabel"
             width = "1020"
             translation="[130,100]"
+        />
+        <StandardKeyboardDialog id="keyboard"
+            width="1280"
+            title = "Custom Group"        
         />
     </children>
 </component>

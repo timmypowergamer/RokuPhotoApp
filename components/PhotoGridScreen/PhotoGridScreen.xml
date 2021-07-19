@@ -37,7 +37,6 @@
             focusXOffset="[50]"
             showRowLabel="[false]"
             rowFocusAnimationStyle="fixedFocusWrap"
-            backgroundColor="0x111111"
         />
     </Rectangle>
 </children>
